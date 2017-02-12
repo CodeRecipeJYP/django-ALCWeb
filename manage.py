@@ -3,6 +3,7 @@ import os
 import sys
 # hi woojoo
 # hi jy
+# this is jyp's
 if __name__ == "__main__":
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "mysite.settings")
 
