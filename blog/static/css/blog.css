@@ -1,8 +1,20 @@
 .post {
 	color: #428bca;
-	
+	background-color: lightyellow;
+	text-align: center;
+	font-family: verdana;
+	font-size: 20px;
 }
 
 .detail{
 	color: #3B2;
+}
+
+body {
+	background-color: lightblue;
+	background-image: url("paper.gif");
+}
+
+.page-header {
+	text-align: center;
 }
