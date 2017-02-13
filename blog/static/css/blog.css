@@ -1,6 +1,9 @@
+body {
+	font-family: 'NanumBarunGothic';
+}
 .post {
+	font-family: 'Siingwana';
 	color: black;
-	
 }
 
 .blogtitle {
@@ -13,4 +16,24 @@
 
 .comment {
     margin: 20px 0px 20px 20px;
+}
+
+@font-face {
+	font-family:'NanumBarunGothic';
+	font-style:normal;
+	font-weight:700;
+  	src: url('../fonts/NanumBGothic.eot');
+  	src: local('../fonts/NanumGothic.eot');
+  	src: url('../fonts/NanumGothic.woff') format('woff');
+  	src: local('../fonts/NanumGothic.woff') format('woff');
+}
+
+@font-face {
+	font-family:'Siingwana';
+	font-style:normal;
+	font-weight:700;
+  	src: url('../fonts/DXPnM-KSCpc-EUC-H.woff.ttf') format('truetype');
+  	src: local('../fonts/DXPnM-KSCpc-EUC-H.ttf') format('truetype');
+  	src: url('../fonts/DXPnM-KSCpc-EUC-H.woff') format('woff');
+  	src: local('../fonts/DXPnM-KSCpc-EUC-H.woff') format('woff');
 }
