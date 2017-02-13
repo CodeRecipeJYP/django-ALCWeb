@@ -1,6 +1,10 @@
 .post {
-	color: #428bca;
+	color: black;
 	
+}
+
+.blogtitle {
+	margin-left: 10%;
 }
 
 .detail{

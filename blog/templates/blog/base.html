@@ -12,9 +12,9 @@
 
 	<body>
     	<div class="page-header">
-        <h1><a href="/">ALC</a></h1>
+        <h1 class="blogtitle"><a href="/">Afkn Listeners' Club</a></h1>
         {% if user.is_authenticated %}
-          <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+          <a href="{% url 'post_new' %}" class="top-menu"><span class="blogtitle glyphicon glyphicon-plus"></span></a>
         {% endif %}
    	 </div>
    	 <div class="content container">
