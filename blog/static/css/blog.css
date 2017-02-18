@@ -8,6 +8,7 @@ body {
 .post {
 	font-family: 'Siingwana';
 	color: black;
+	margin-top: 10%;
 }
 
 .blogtitle {
@@ -46,8 +47,8 @@ head,body {
     margin-top: 20px;s
 	background-position: center;
     background-position: top;
-    background-image:url("../images/kermit_frogs.png");
-                       /*url("https://cdn.pixabay.com/photo/2011/12/13/14/07/galaxy-10994_960_720.jpg");*/
+    background-image:url("../images/kermit_frogs.png"),
+                       url("https://cdn.pixabay.com/photo/2011/12/13/14/07/galaxy-10994_960_720.jpg");
 
 }
 
