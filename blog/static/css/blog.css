@@ -45,10 +45,11 @@ body {
 }
 
 head,body {
-    margin-top: 20px;s
+    margin-top: 20px;
 	background-position: center;
     background-position: top;
     background-image: url("../images/space.jpg");
+    background-repeat: repeat-y;
 	width: auto;
 	background-size: contain;
 }
@@ -62,6 +63,8 @@ h1>a {
 .alcheader{
     padding-bottom:9px;margin:40px 0 20px;border-bottom:4px solid #eee;
 	font-family: 'orangejuice2.0';
+    width: 700px;
+    margin: auto;
 }
 
 input,textarea{
