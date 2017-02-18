@@ -45,12 +45,11 @@ body {
 }
 
 head,body {
-    margin-top: 20px;
-	background-position: center;
-    background-position: top;
+
     background-image: url("../images/space.jpg");
     background-repeat: repeat-y;
-	width: auto;
+	width: 1500px;
+	margin: auto;
 	background-size: contain;
 }
 
