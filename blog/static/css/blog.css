@@ -49,7 +49,6 @@ head,body {
     background-image: url("../images/space.jpg");
     background-repeat: repeat-y;
 	width: 100%;
-	margin: auto;
 	background-size: contain;
 }
 
