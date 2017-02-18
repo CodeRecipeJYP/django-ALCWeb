@@ -50,6 +50,7 @@ head,body {
     background-image:url("../images/kermit_frogs.png"),
                        url("../images/space.jpg");
 	width: auto;
+	background-size: contain;
 }
 
 h1>a {
@@ -60,7 +61,7 @@ h1>a {
 
 p{
   color:white;
-    font-style: inherit;
+	font-style: inherit;
 }
 
 .alcheader{
