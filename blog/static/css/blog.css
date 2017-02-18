@@ -1,5 +1,9 @@
+@font-face {
+    font-family: 'orangejuice2.0'; src: url('../fonts/orangejuice2.0.ttf');
+}
+
 body {
-	font-family: 'NanumBarunGothic';
+	font-family: 'orangejuice2.0';
 }
 .post {
 	font-family: 'Siingwana';
@@ -15,7 +19,7 @@ body {
 }
 
 .comment {
-    margin: 20px 20px 20px 20px;
+    margin: 20px 0px 20px 20px;
 }
 
 @font-face {
@@ -37,3 +41,29 @@ body {
   	src: url('../fonts/DXPnM-KSCpc-EUC-H.woff') format('woff');
   	src: local('../fonts/DXPnM-KSCpc-EUC-H.woff') format('woff');
 }
+
+head,body {
+    margin-top: 20px;s
+	background-position: center;
+    background-position: top;
+    background-image:url("../images/kermit_frogs.png"),
+                        url("https://cdn.pixabay.com/photo/2011/12/13/14/07/galaxy-10994_960_720.jpg");
+
+}
+
+h1>a {
+    color: white;
+    font-size: 80px;
+    text-align: center;
+}
+
+p{
+  color:white;
+    font-style: inherit;
+}
+
+.alcheader{
+    padding-bottom:9px;margin:40px 0 20px;border-bottom:4px solid #eee;
+
+}
+
