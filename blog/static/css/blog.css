@@ -49,7 +49,7 @@ head,body {
     background-position: top;
     background-image:url("../images/kermit_frogs.png"),
                        url("../images/space.jpg");
-	width: 100%;
+	width: auto;
 }
 
 h1>a {
