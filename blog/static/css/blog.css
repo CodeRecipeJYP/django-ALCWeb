@@ -47,9 +47,8 @@ body {
 head,body {
 
     background-image: url("../images/space.jpg");
-    background-repeat: repeat-y;
-	width: 100%;
-	background-size: 100%;
+    background-repeat: inherit;
+	background-size: contain;
 }
 
 h1>a {
