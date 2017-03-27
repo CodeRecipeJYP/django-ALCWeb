@@ -25,7 +25,7 @@ DEBUG = True
 TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1',
-                'yangyinetwork.asuscomm.com']
+                'thealc.pythonanywhere.com']
 
 
 # Application definition
@@ -59,16 +59,28 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 
 DATABASES = {
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     'NAME': 'thealc$default',
+    #     'USER': 'thealc',
+    #     'PASSWORD': '',
+    #     'HOST': 'thealc.mysql.pythonanywhere-services.com',
+    # }
+
+    ## LOCAL
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'thealc',
+        'USER': 'thealc',
+        'PASSWORD': '',
+        'HOST': 'thealc.caiedit8oxa9.ap-northeast-2.rds.amazonaws.com',
     }
 }
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ko-kr'
 
 TIME_ZONE = 'Asia/Seoul'
 

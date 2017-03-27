@@ -3,23 +3,29 @@ from django.utils import timezone
 from .models import Post, Comment
 from .forms import PostForm, CommentForm
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth .models import User
+
 
 def post_list(request):
-    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
+    posts = Post.objects.all().order_by('-uploaded_date')
     return render(request, 'blog/post_list.html',{'posts':posts})
 
 def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
     return render(request, 'blog/post_detail.html',{'post':post})
 
-@login_required
+# @login_required
 def post_new(request):
     if request.method == "POST":
         form = PostForm(request.POST)
         if form.is_valid():
             post = form.save(commit=False)
-            post.author = request.user
-            post.published_date = timezone.now()
+            if request.user.is_anonymous:
+                post.author = User.objects.first()
+            else:
+                post.author = request.user
+
+            post.uploaded_date = timezone.now()
             post.save()
             return redirect('post_detail', pk=post.pk)
     else:
@@ -33,7 +39,7 @@ def post_edit(request, pk):
         if form.is_valid():
             post = form.save(commit=False)
             post.author = request.user
-            post.published_date = timezone.now()
+            post.uploaded_date = timezone.now()
             post.save()
             return redirect('post_detail', pk=post.pk)
     else:
@@ -58,13 +64,13 @@ def add_comment_to_post(request, pk):
         form = CommentForm()
     return render(request, 'blog/add_comment_to_post.html', {'form': form})
 
-@login_required
+# @login_required
 def comment_approve(request, pk):
     comment = get_object_or_404(Comment, pk=pk)
     comment.approve()
     return redirect('post_detail', pk=comment.post.pk)
 
-@login_required
+# @login_required
 def comment_remove(request, pk):
     comment = get_object_or_404(Comment, pk=pk)
     post_pk = comment.post.pk
