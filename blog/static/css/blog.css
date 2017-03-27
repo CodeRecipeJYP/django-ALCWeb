@@ -57,6 +57,10 @@ h1>a {
     text-align: center;
 }
 
+p {
+	color: white;
+}
+
 .alcheader{
     padding-bottom:9px;border-bottom:4px solid #eee;
 	font-family: 'orangejuice2.0';
